@@ -145,8 +145,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("BakedBeansCan");
             MissionObject.GetInventory().CreateInInventory("Canteen");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
-        }
-        if (selectedLoadout == 1) {
+        } else if (selectedLoadout == 1) {
             weapon = MissionObject.GetInventory().CreateInInventory("SVD");
             weapon.GetInventory().CreateAttachment("PSO11Optic");
             //weapon.GetInventory().CreateAttachment("PSO1Optic");
@@ -159,8 +158,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("PeachesCan");
             MissionObject.GetInventory().CreateInInventory("WaterBottle");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
-        }
-        if (selectedLoadout == 2) {
+        } else if (selectedLoadout == 2) {
             weapon = MissionObject.GetInventory().CreateInInventory("AKM");
             weapon.GetInventory().CreateAttachment("AK_RailHndgrd_Green");
             weapon.GetInventory().CreateAttachment("AK_Suppressor");
@@ -174,8 +172,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("SardinesCan");
             MissionObject.GetInventory().CreateInInventory("Canteen");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
-        }
-        if (selectedLoadout == 3) {
+        } else if (selectedLoadout == 3) {
             weapon = MissionObject.GetInventory().CreateInInventory("FAL");
             weapon.GetInventory().CreateAttachment("Fal_OeBttstck");
             weapon.GetInventory().CreateAttachment("M4_Suppressor");
@@ -188,8 +185,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("M18SmokeGrenade_Yellow");
             MissionObject.GetInventory().CreateInInventory("TacticalBaconCan");
             MissionObject.GetInventory().CreateInInventory("SteakKnife");
-        }
-        if (selectedLoadout == 4) {
+        } else if (selectedLoadout == 4) {
             weapon = MissionObject.GetInventory().CreateInInventory("SKS");
             weapon.GetInventory().CreateAttachment("PUScopeOptic");
             weapon.GetInventory().CreateAttachment("SKS_Bayonet");
@@ -203,8 +199,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("Ammo_45ACP");
             MissionObject.GetInventory().CreateInInventory("WaterBottle");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
-        }
-        if (selectedLoadout == 5) {
+        } else if (selectedLoadout == 5) {
             weapon = MissionObject.GetInventory().CreateInInventory("Winchester70");
             weapon.GetInventory().CreateAttachment("HuntingOptic");
             MissionObject.GetInventory().CreateInInventory("Ammo_308Win");
@@ -224,8 +219,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("SpaghettiCan");
             MissionObject.GetInventory().CreateInInventory("StoneKnife");
             MissionObject.GetInventory().CreateInInventory("M67Grenade");
-        }
-        if (selectedLoadout == 6) {
+        } else if (selectedLoadout == 6) {
             weapon = MissionObject.GetInventory().CreateInInventory("UMP45");
             weapon.GetInventory().CreateAttachment("M68Optic");
             weapon.GetInventory().CreateAttachment("PistolSuppressor");
@@ -238,8 +232,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("WaterBottle");
             MissionObject.GetInventory().CreateInInventory("TunaCan");
             MissionObject.GetInventory().CreateInInventory("RDG5Grenade");
-        }
-        if (selectedLoadout == 7) {
+        } else if (selectedLoadout == 7) {
             weapon = MissionObject.GetInventory().CreateInInventory("VSS");
             weapon.GetInventory().CreateAttachment("PSO11Optic");
             //weapon.GetInventory().CreateAttachment("PistolSuppressor");
@@ -252,8 +245,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("WaterBottle");
             MissionObject.GetInventory().CreateInInventory("SardinesCan");
             MissionObject.GetInventory().CreateInInventory("M18SmokeGrenade_Green");
-        }
-        if (selectedLoadout == 8) {
+        } else if (selectedLoadout == 8) {
             weapon = MissionObject.GetInventory().CreateInInventory("MP5K");
             weapon.GetInventory().CreateAttachment("MP5_RailHndgrd");
             weapon.GetInventory().CreateAttachment("MP5k_StockBttstck");
@@ -270,8 +262,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("Battery9V");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
-        }
-        if (selectedLoadout == 9) {
+        } else if (selectedLoadout == 9) {
             weapon = MissionObject.GetInventory().CreateInInventory("AK74");
             weapon.GetInventory().CreateAttachment("AK_RailHndgrd");
             weapon.GetInventory().CreateAttachment("AK74_WoodBttstck");
@@ -286,8 +277,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("Tomato");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
-        }
-        if (selectedLoadout == 10) {
+        } else if (selectedLoadout == 10) {
             weapon = MissionObject.GetInventory().CreateInInventory("AKS74U");
             weapon.GetInventory().CreateAttachment("AKS74U_Bttstck");
             MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
@@ -301,8 +291,7 @@ class HordeMission extends SurvivorMissions {
             MissionObject.GetInventory().CreateInInventory("Battery9V");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
             MissionObject.GetInventory().CreateInInventory("Battery9V");
-        }
-        if (selectedLoadout == 11) {
+        } else if (selectedLoadout == 11) {
             weapon = MissionObject.GetInventory().CreateInInventory("Glock19");
             weapon.GetInventory().CreateAttachment("PistolSuppressor");
             MissionObject.GetInventory().CreateInInventory("Mag_Glock_15Rnd");
