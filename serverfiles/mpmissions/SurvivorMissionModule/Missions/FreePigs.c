@@ -55,7 +55,7 @@ class FreePigsMission extends SurvivorMissions {
         SurvivorName = SurvivorNames.GetRandomElement();
 
         //Set mission messages for primary mission
-        m_MissionMessage1 = SurvivorName + ", a farmer from " + m_MissionLocation + ", died 2 days ago after a attack from bandits. He was protecting his animls from infected and scavengers and was farming pigs to deliver meat to the young and old survivors hideout somewhere in the forests.";
+        m_MissionMessage1 = SurvivorName + ", a farmer from " + m_MissionLocation + ", died 2 days ago after a attack from bandits. He was protecting his animals from infected and scavengers and was farming pigs to deliver meat to the young and old survivors hideout somewhere in the forests.";
         m_MissionMessage2 = "He was well known under survivors for his perfection in making good bacon and spiced meat for barbecue. His pigs are still in the shed and I am afraid they could starve to death, if they are not already dead by infected or robbed by bandits.";
         m_MissionMessage3 = "Go to " + SurvivorName + "'s farm located \n** " + m_MissionLocationDir + " of " + m_MissionLocation + " **\nand free all the pigs from their cage to give them a chance to survive. You need at least a knife.";
 
