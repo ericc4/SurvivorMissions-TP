@@ -913,7 +913,7 @@ class EventsWorldData extends SurvivorMissions
 			else if ( MLocation == "Gvozdno")				BuildingPosList.Insert("8303.3 150.5 12100,8");
 			else if ( MLocation == "Kozlovka")				BuildingPosList.Insert("4278.5 203.8 4459.1");
 			else if ( MLocation == "Kotka_Mountain")		BuildingPosList.Insert("5695.5 328.6 6892.9");
-			else if ( MLocation == "Nizhnoye")				BuildingPosList.Insert("12897.0 7.2 8338.3");
+			else if ( MLocation == "Nizhnoye")				BuildingPosList.Insert("12895.0 8.7 8342.6");
 			else if ( MLocation == "Nagornoe")				BuildingPosList.Insert("9394.3 232.5 14551.7");
 			else if ( MLocation == "Rog_Castle")			BuildingPosList.Insert("11235.3 235.3 4618.8");
 			else if ( MLocation == "Shakhovka")				BuildingPosList.Insert("9573.3 213.9 6791.0");
