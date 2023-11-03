@@ -251,7 +251,7 @@ class TransportMission extends SurvivorMissions {
 
     void SpawnRewards() {
         //new MissionObject after deleting protector case
-        MissionObject = ItemBase.Cast(GetGame().CreateObjectEx("MountainBag_Green", m_MissionPosition, ECE_PLACE_ON_SURFACE));
+        MissionObject = ItemBase.Cast(GetGame().CreateObjectEx("Bear_Pink", m_MissionPosition, ECE_PLACE_ON_SURFACE));
 
         //Get random loadout
         int selectedLoadout = Math.RandomIntInclusive(0, 9); //!change randomization limit after adding new loadouts!
@@ -260,154 +260,49 @@ class TransportMission extends SurvivorMissions {
         EntityAI weapon;
 
         if (selectedLoadout == 0) {
-            weapon = MissionObject.GetInventory().CreateInInventory("M4A1_Green");
-            weapon.GetInventory().CreateAttachment("M4_RISHndgrd_Green");
-            weapon.GetInventory().CreateAttachment("M4_MPBttstck");
-            weapon.GetInventory().CreateAttachment("ACOGOptic");
-            weapon.GetInventory().CreateAttachment("M4_Suppressor");
-            MissionObject.GetInventory().CreateInInventory("Mag_STANAG_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_STANAG_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("M4_T3NRDSOptic");
-            MissionObject.GetInventory().CreateInInventory("Ammo_556x45");
-            MissionObject.GetInventory().CreateInInventory("Ammo_556x45");
-            MissionObject.GetInventory().CreateInInventory("CanOpener");
-            MissionObject.GetInventory().CreateInInventory("PeachesCan");
-            MissionObject.GetInventory().CreateInInventory("Canteen");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble5000");
         } else if (selectedLoadout == 1) {
-            weapon = MissionObject.GetInventory().CreateInInventory("SVD");
-            weapon.GetInventory().CreateAttachment("PSO1Optic");
-            MissionObject.GetInventory().CreateInInventory("Mag_SVD_10Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_SVD_10Rnd");
-            MissionObject.GetInventory().CreateInInventory("PSO1Optic");
-            MissionObject.GetInventory().CreateInInventory("KazuarOptic");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x54");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x54");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x54");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x54");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x54");
-            MissionObject.GetInventory().CreateInInventory("CanOpener");
-            MissionObject.GetInventory().CreateInInventory("PeachesCan");
-            MissionObject.GetInventory().CreateInInventory("Canteen");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble500");
         } else if (selectedLoadout == 2) {
-            weapon = MissionObject.GetInventory().CreateInInventory("AKM");
-            weapon.GetInventory().CreateAttachment("AK_RailHndgrd_Green");
-            weapon.GetInventory().CreateAttachment("AK_PlasticBttstck_Green");
-            weapon.GetInventory().CreateAttachment("PSO1Optic");
-            weapon.GetInventory().CreateAttachment("AK_Suppressor");
-            MissionObject.GetInventory().CreateInInventory("Mag_AKM_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_AKM_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x39");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x39");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x39");
-            MissionObject.GetInventory().CreateInInventory("CanOpener");
-            MissionObject.GetInventory().CreateInInventory("PeachesCan");
-            MissionObject.GetInventory().CreateInInventory("Canteen");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble100");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble2_Coin");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble1_Coin");
         } else if (selectedLoadout == 3) {
-            weapon = MissionObject.GetInventory().CreateInInventory("FAL");
-            weapon.GetInventory().CreateAttachment("Fal_OeBttstck");
-            MissionObject.GetInventory().CreateInInventory("Mag_FAL_20Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_FAL_20Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_FAL_20Rnd");
-            MissionObject.GetInventory().CreateInInventory("M4_Suppressor");
-            MissionObject.GetInventory().CreateInInventory("ACOGOptic");
-            MissionObject.GetInventory().CreateInInventory("FNX45");
-            MissionObject.GetInventory().CreateInInventory("Mag_FNX45_15Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_FNX45_15Rnd");
-            MissionObject.GetInventory().CreateInInventory("Ammo_45ACP");
-            MissionObject.GetInventory().CreateInInventory("FNP45_MRDSOptic");
-            MissionObject.GetInventory().CreateInInventory("PistolSuppressor");
-            MissionObject.GetInventory().CreateInInventory("PsilocybeMushroom");
-            MissionObject.GetInventory().CreateInInventory("AmmoBox");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble100");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble50");
         } else if (selectedLoadout == 4) {
-            weapon = MissionObject.GetInventory().CreateInInventory("SKS");
-            weapon.GetInventory().CreateAttachment("PUScopeOptic");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x39");
-            MissionObject.GetInventory().CreateInInventory("Ammo_762x39");
-            weapon = MissionObject.GetInventory().CreateInInventory("FNX45");
-            weapon.GetInventory().CreateAttachment("PistolSuppressor");
-            EntityAI weaponlight = weapon.GetInventory().CreateAttachment("TLRLight");
-            weaponlight.GetInventory().CreateAttachment("Battery9V");
-            MissionObject.GetInventory().CreateInInventory("Mag_FNX45_15Rnd");
-            MissionObject.GetInventory().CreateInInventory("Ammo_45ACP");
-            MissionObject.GetInventory().CreateInInventory("AmmoBox");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble100");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble10");
         } else if (selectedLoadout == 5) {
-            weapon = MissionObject.GetInventory().CreateInInventory("Winchester70");
-            weapon.GetInventory().CreateAttachment("HuntingOptic");
-            MissionObject.GetInventory().CreateInInventory("Ammo_308Win");
-            MissionObject.GetInventory().CreateInInventory("Ammo_308Win");
-            MissionObject.GetInventory().CreateInInventory("FNX45");
-            MissionObject.GetInventory().CreateInInventory("Mag_FNX45_15Rnd");
-            MissionObject.GetInventory().CreateInInventory("Ammo_45ACP");
-            MissionObject.GetInventory().CreateInInventory("AmmoBox");
-            MissionObject.GetInventory().CreateInInventory("PistolSuppressor");
-            MissionObject.GetInventory().CreateInInventory("TLRLight");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble100");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble5");
         } else if (selectedLoadout == 6) {
-            weapon = MissionObject.GetInventory().CreateInInventory("MP5K");
-            weapon.GetInventory().CreateAttachment("MP5_RailHndgrd");
-            weapon.GetInventory().CreateAttachment("MP5k_StockBttstck");
-            weapon.GetInventory().CreateAttachment("M68Optic");
-            weapon.GetInventory().CreateAttachment("PistolSuppressor");
-            MissionObject.GetInventory().CreateInInventory("Mag_MP5_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_MP5_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("AmmoBox_9x19_25rnd");
-            MissionObject.GetInventory().CreateInInventory("GP5GasMask");
-            MissionObject.GetInventory().CreateInInventory("NBCGlovesGray");
-            MissionObject.GetInventory().CreateInInventory("WaterBottle");
-            MissionObject.GetInventory().CreateInInventory("SpaghettiCan");
-            MissionObject.GetInventory().CreateInInventory("M18SmokeGrenade_Red");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble100");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble2_Coin");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble1_Coin");
         } else if (selectedLoadout == 7) {
-            weapon = MissionObject.GetInventory().CreateInInventory("AK74");
-            weapon.GetInventory().CreateAttachment("AK_RailHndgrd");
-            weapon.GetInventory().CreateAttachment("AK74_WoodBttstck");
-            weapon.GetInventory().CreateAttachment("KashtanOptic");
-            weapon.GetInventory().CreateAttachment("'AK_Suppressor");
-            MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("Headtorch_Grey");
-            MissionObject.GetInventory().CreateInInventory("NBCBootsGray");
-            MissionObject.GetInventory().CreateInInventory("Canteen");
-            MissionObject.GetInventory().CreateInInventory("TacticalBaconCan");
-            MissionObject.GetInventory().CreateInInventory("Tomato");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble100");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble2_Coin");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble1_Coin");
         } else if (selectedLoadout == 8) {
-            weapon = MissionObject.GetInventory().CreateInInventory("AKS74U");
-            weapon.GetInventory().CreateAttachment("AKS74U_Bttstck");
-            MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_AK74_30Rnd");
-            MissionObject.GetInventory().CreateInInventory("M67Grenade");
-            MissionObject.GetInventory().CreateInInventory("M67Grenade");
-            MissionObject.GetInventory().CreateInInventory("Matchbox");
-            MissionObject.GetInventory().CreateInInventory("Canteen");
-            MissionObject.GetInventory().CreateInInventory("PortableGasStove");
-            MissionObject.GetInventory().CreateInInventory("SmallGasCanister");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble100");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble2_Coin");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble1_Coin");
         } else if (selectedLoadout == 9) {
-            weapon = MissionObject.GetInventory().CreateInInventory("Glock19");
-            weapon.GetInventory().CreateAttachment("PistolSuppressor");
-            MissionObject.GetInventory().CreateInInventory("Mag_Glock_15Rnd");
-            MissionObject.GetInventory().CreateInInventory("Mag_Glock_15Rnd");
-            MissionObject.GetInventory().CreateInInventory("FishingRod");
-            MissionObject.GetInventory().CreateInInventory("Carp");
-            MissionObject.GetInventory().CreateInInventory("Hook");
-            MissionObject.GetInventory().CreateInInventory("Worm");
-            MissionObject.GetInventory().CreateInInventory("CombatKnife");
-            MissionObject.GetInventory().CreateInInventory("FieldShovel");
-            MissionObject.GetInventory().CreateInInventory("Canteen");
-            MissionObject.GetInventory().CreateInInventory("MackerelFilletMeat");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
-            MissionObject.GetInventory().CreateInInventory("Battery9V");
+            weapon = MissionObject.GetInventory().CreateInInventory("Derringer_Grey");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble2_Coin");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble2_Coin");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble2_Coin");
+            MissionObject.GetInventory().CreateInInventory("TraderPlus_Money_Ruble2_Coin");
         }
 
         Print("[SMM] Mission rewards spawned in reward container. Randomly selected loadout was " + selectedLoadout + ".");
@@ -521,7 +416,7 @@ class TransportMission extends SurvivorMissions {
         //Set messages for secondary mission
         m_MissionMessage1 = "Allright, so you have found the car. " + SurvivorName + " has probably drained all fuel and oil so prepare the car before that long trip. Check if the dried Cannabis is anywhere in the garages there and take the bag and put all 25 pieces in it.";
         m_MissionMessage2 = "Drive to the  ** " + m_MissionSecondaryLoc + " Gas Station **\nand bring the Ganjabag to cash desk. " + SurvivorName + "'s ganja has the highest priority. Please don't steal or smoke any of it by your own because it could be very dangerous.";
-        m_MissionMessage3 = "I have some things for you at the gas station. Be carefull, there might be bandits on the way to " + m_MissionSecondaryLoc + ". They could intercepted our little radio talk here. Good luck and drive carefully!";
+        m_MissionMessage3 = "I have some money for you at the gas station. Be carefull, there might be bandits on the way to " + m_MissionSecondaryLoc + ". They could intercepted our little radio talk here. Good luck and drive carefully!";
 
         //init Messenger for new messages
         m_MsgNum = 1; //skip msg 0, begin with msg 1
